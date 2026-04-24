@@ -1,0 +1,16 @@
+location            = "indonesiacentral"
+resource_group_name = "gitops"
+cluster_name        = "gitops-aks"
+dns_prefix          = "gitops"
+
+node_count = 2
+node_size  = "Standard_D4as_v5"
+
+tags = {
+  environment = "dev"
+  project     = "gitops"
+}
+
+subscription_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+kubernetes_version = "1.34.4"
